@@ -9,8 +9,17 @@ fire-with-all.py  detect fire and send sms for user
 robot.py  sytem for robot with our ai model
 ```
 
-The OPEN FIRE
+Before you can run this project, you must have the following packages installed:
 ```
+tensorflow
+twile
+keras
+opencv
+Geocoder 
+```
+
+The OPEN FIRE
+
 Python scripts demonstrate the implementation of two distinct systems for fire detection: a Convolutional Neural Network (CNN) model for image classification and a robotic system capable of detecting and responding to fires in real-time.
 
 The CNN model is designed for binary classification of images into two classes: "fire" and "no fire." The script leverages the Keras ImageDataGenerator class to preprocess and augment the images stored in the "train" and "valid" directories before feeding them to the model. The CNN architecture comprises convolutional layers, followed by max-pooling layers, and a fully connected layer with a Rectified Linear Unit (ReLU) activation function. Dropout layers are incorporated to prevent overfitting, and the output layer is a dense layer with a softmax activation function for binary classification. The model is compiled with categorical_crossentropy loss function and Adam optimizer with a learning rate. During training, the model is evaluated based on accuracy as the metric. After training, the model's performance is evaluated by plotting accuracy and loss over the epochs.
