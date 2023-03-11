@@ -1,2 +1,2 @@
 # bk-fire
-lien de model : https://drive.google.com/drive/u/2/folders/19TqQx8erd-fHEjRjUrXOeXKocdzXeenr
+lien de model : https://drive.google.com/drive/folders/19TqQx8erd-fHEjRjUrXOeXKocdzXeenr?usp=share_link
