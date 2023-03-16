@@ -4,7 +4,7 @@ import torch
 
 model = torch.hub.load('ultralytics/yolov5', 'custom', 'openfiree.pt')
 
-def yolo(im, size=640):
+def obti(im, size=640):
     g = (size / max(im.size))  # gain
     im = im.resize((int(x * g) for x in im.size), Image.ANTIALIAS)
     results = model(im)
@@ -19,7 +19,7 @@ while True:
     isTrue, frame = capture.read()
     frame = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
     pil_image = Image.fromarray(frame)
-    detections = yolo(pil_image)
+    detections = obti(pil_image)
     if not detections.empty:
         print("Fire detected")
         for _, detection in detections.iterrows():
